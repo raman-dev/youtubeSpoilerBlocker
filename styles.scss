@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'm3colors';
+
+html, body{
+    height: fit-content;
+}
+
+@font-face {
+    font-family: pageFont;
+    // src: url("Quicksand/static/Quicksand-SemiBold.ttf");
+    src: url("Manrope/static/Manrope-Regular.ttf"); 
+    //src: url("Poppins/poppins_medium.ttf");
+}
+
+@font-face {
+    font-family: pageFontBold;
+    // src: url("Quicksand/static/Quicksand-SemiBold.ttf");
+    src: url("Manrope/static/Manrope-SemiBold.ttf"); 
+    //src: url("Poppins/poppins_medium.ttf");
+}
+ 
+@font-face {
+    font-family: titleFont;
+    // font-weight: 900;
+    // src: url("Quicksand/Quicksand-VariableFont_wght.ttf");
+    src: url("Manrope/static/Manrope-Bold.ttf"); 
+    // src: url("Poppins/poppins_semibold.ttf");
+}
+
+body{ 
+    background-color: $lightbackgroundopacity-008;
+    font-family: pageFont;
+}
+
+h1{
+    font-family: titleFont;
+    font-size: 1.3rem;
+    color: $lighton-backgroundopacity-008;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+button{
+    font-size: 0.9rem;
+}
+
+.add-word-button{
+    background-color: $lightprimaryopacity-008;
+    color: $lighton-primaryopacity-008;
+}
+
+.add-word-button:hover{
+    background-color: $primary50;
+}
+
+.add-word-button:active{
+    background-color: $primary30;
+}
+
+.mr-1{
+    margin-right: 0.25rem;
+}
+.word-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    .word{
+        display: flex;
+        align-items: center;
+        width: fit-content;
+
+        background-color: $lightsecondaryopacity-008;
+        color: $lighton-secondaryopacity-008;
+        font-size: 0.75rem;
+
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        button{
+            margin-left: 0.25rem;
+        }
+        p{
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+
+            white-space: nowrap;
+        }
+    }
+}
+
+.hidden {
+    height: 0px;
+}
+
+.refresh-notification{
+    overflow: hidden;
+    transition: height 0.1s ease-out;
+}

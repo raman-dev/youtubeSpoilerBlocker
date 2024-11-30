@@ -1,0 +1,45 @@
+.spoiler-block-home ytd-thumbnail {
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+}
+
+.spoiler-block-home h3 a {
+  opacity: 0;
+}
+
+.spoiler-block-channels ytd-thumbnail {
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+}
+
+.spoiler-block-channels h3 a {
+  opacity: 0;
+}
+
+.spoiler-block-explore ytd-thumbnail {
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+}
+
+.spoiler-block-explore h3 a {
+  opacity: 0;
+}
+
+.spoiler-block-search ytd-thumbnail {
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+}
+
+.spoiler-block-search h3 a {
+  opacity: 0;
+}
+
+.spoiler-block-watch ytd-thumbnail {
+  -webkit-filter: blur(1rem);
+          filter: blur(1rem);
+}
+
+.spoiler-block-watch h3 span {
+  opacity: 0;
+}
+/*# sourceMappingURL=spoiler-block.css.map */

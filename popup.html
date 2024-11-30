@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="styles.css" rel="stylesheet" />
+    <link href="twoutput.css" rel="stylesheet" />
+</head> 
+   
+<body class="pb-2">        
+    
+    <h1 class="mb-2 text-center bg-slate-600 text-white whitespace-nowrap capitalize decoration-2 rounded-2">youtube spoiler blocker</h1>
+    <div class="mx-1 refresh-notification">
+        <h3>
+            <em><strong>Refresh page to reflect changes.</strong></em>
+        </h3>
+    </div>
+    <div class="word-input px-1 mb-1 flex">   
+        <!---focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2--> 
+        <input class="w-full bg-gray-200 rounded-lg p-1" placeholder=" add term" type="text">
+        <!-- <button class="category-item-add rounded-tr-md rounded-br-md p-1 pr-2">add</button>  -->
+        <button class="add-word-button ml-2 py-1 focus:ring flex items-center rounded-lg "> 
+            <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 0 24 24" width="22px" fill="#ffffffff">
+                <path d="M0 0h24v24H0V0z" fill="none" />
+                <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+            </svg> 
+            <p class="mr-2 capitalize">add</p> 
+        </button>
+    </div>    
+    <ul class="word-list mx-1">  
+    </ul>
+    
+    <script src="jquery-3.6.0.js"></script>
+    <script src="popup.js"></script>
+</body>
+
+</html> 
+
+<!-- <ul class="category-list divide-y">       
+        <li class="category-list-item">      
+            <div class="collapse-toggle p-1" data-collapse-open="false">   
+                <svg class="collapse-icon rounded-full" xmlns="http://www.w3.org/2000/svg" height="24px"
+                    viewBox="0 0 24 24" width="24px" fill="#000000"> 
+                    <path d="M24 24H0V0h24v24z" fill="none" opacity=".87" /> 
+                    <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6-1.41-1.41z" />  
+                </svg>   
+                <h2>spiderman</h2>     
+                <p class="category-item-count rounded-full px-2">3 items</p>  
+            </div>         
+            <div class="collapse">    
+                <div class="category-item-input rounded-br-md p-2">  
+                    -focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2
+                     <input class="rounded-tl-md rounded-bl-md h-full p-1" placeholder=" add term" type="text">
+                    <button class="category-item-add rounded-tr-md rounded-br-md p-1 pr-2">add</button> 
+                </div>  
+                <div class="word-list"> 
+                    <div class="category-item m-1 p-1 rounded-full">
+                        <button class="category-item-delete"><img src="close_black_24dp.svg"></button>  
+                        <p>peter parker</p>
+                    </div>
+                    <div class="category-item m-1 p-1 rounded-full">
+                        <button class="category-item-delete ml-1"><img src="close_black_24dp.svg"></button>  
+                        <p>zendaya</p>
+                    </div>
+                    <div class="category-item m-1 p-1 rounded-full">
+                        <button class="category-item-delete ml-1"><img src="close_black_24dp.svg"></button>  
+                        <p>tom holland</p>
+                    </div> 
+                </div> 
+            </div>    
+        </li>   
+    </ul>  -->

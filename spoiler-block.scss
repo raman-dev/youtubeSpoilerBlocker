@@ -1,0 +1,37 @@
+@mixin thumbnailBlur{
+    filter: blur(1rem);
+}
+
+@mixin spoiler-general-block{
+    ytd-thumbnail {
+        @include thumbnailBlur();
+    }
+    h3 a{
+        opacity: 0; 
+    }
+}
+
+.spoiler-block-home{
+    @include spoiler-general-block();
+}
+
+.spoiler-block-channels{
+    @include spoiler-general-block();
+}
+
+.spoiler-block-explore{
+    @include spoiler-general-block();
+}
+
+.spoiler-block-search{
+    @include spoiler-general-block();
+}
+
+.spoiler-block-watch{
+    ytd-thumbnail {
+        @include thumbnailBlur();
+    }
+    h3 span{
+        opacity: 0;
+    }
+}

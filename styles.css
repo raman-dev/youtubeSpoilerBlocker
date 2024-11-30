@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Color styles */
+html, body {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+@font-face {
+  font-family: pageFont;
+  src: url("Manrope/static/Manrope-Regular.ttf");
+}
+
+@font-face {
+  font-family: pageFontBold;
+  src: url("Manrope/static/Manrope-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url("Manrope/static/Manrope-Bold.ttf");
+}
+
+body {
+  background-color: #FCFCFF;
+  font-family: pageFont;
+}
+
+h1 {
+  font-family: titleFont;
+  font-size: 1.3rem;
+  color: #1A1C1E;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+button {
+  font-size: 0.9rem;
+}
+
+.add-word-button {
+  background-color: #006496;
+  color: #FFFFFF;
+}
+
+.add-word-button:hover {
+  background-color: #0F7EB8;
+}
+
+.add-word-button:active {
+  background-color: #004B72;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.word-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 350px;
+}
+
+.word-list .word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #50606F;
+  color: #FFFFFF;
+  font-size: 0.75rem;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.word-list .word button {
+  margin-left: 0.25rem;
+}
+
+.word-list .word p {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+  white-space: nowrap;
+}
+
+.hidden {
+  height: 0px;
+}
+
+.refresh-notification {
+  overflow: hidden;
+  -webkit-transition: height 0.1s ease-out;
+  transition: height 0.1s ease-out;
+}
+/*# sourceMappingURL=styles.css.map */

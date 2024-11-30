@@ -1,0 +1,24 @@
+{
+    "name" :"YoutubeSpoilerBlock",
+    "description":"Hide thumbnails and titles of videos with blocked keywords",
+    "version":"3.0",
+    "manifest_version":3,
+    "action":{
+        "default_popup":"popup.html"
+    },
+    "icons":{
+        "48":"spoiler_block_icon48.png",
+        "128":"spoiler_block_icon128.png"
+    },
+    "background":{
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*.youtube.com/*"],
+          "css":["spoiler-block.css"],
+          "js": ["jquery-3.6.0.js","content-script.js"]
+        }
+    ],     
+    "permissions":["activeTab","tabs","storage","alarms","webNavigation"]
+}
